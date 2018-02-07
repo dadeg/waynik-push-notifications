@@ -1,0 +1,14 @@
+web:
+  build: .
+  volumes:
+    - ~/practice/waynik/push-notifications:/data/www
+  external_links:
+    - useradmin_mysql_1:mysql
+  ports:
+    - 21005:80
+  environment:
+    MYSQL_DATABASE: waynik
+    MYSQL_USER: web
+    MYSQL_PASSWORD: way456nik789
+    MYSQL_HOST: mysql
+    APP_ENV: development

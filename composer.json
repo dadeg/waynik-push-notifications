@@ -1,0 +1,27 @@
+{
+    "name": "waynik/push-notifications",
+    "description": "Waynik.com push notification service",
+    "require": {
+        "aura/router": "3.*",
+        "zendframework/zend-diactoros": "1.3.*",
+        "aura/auth": "2.*",
+        "aws/aws-php-sns-message-validator": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Waynik\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dan DeGreef",
+            "email": "dan.degreef@gmail.com"
+        }
+    ],
+    "config": {
+    "preferred-install": "dist",
+    "platform": {
+        "php": "7.0"
+    }
+}
+}
